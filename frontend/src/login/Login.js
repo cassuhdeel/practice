@@ -1,10 +1,10 @@
-import { React, Fragment } from "react";
+import React from "react";
 
 function Login() {
   return (
-    <Fragment>
+    <div>
         <h4> Testing Login Page. You've successfully rendered me.</h4>
-    </Fragment>
+    </div>
   );
 }
 
