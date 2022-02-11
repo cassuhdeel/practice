@@ -1,16 +1,16 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Login from "../login/Login";
+import { React, Fragment } from "react";
+import Routess from "./Routes";
 
+/**
+ * Defines the main layout of the application.
+ *
+ * @returns {JSX.Element}
+ */
 function Layout() {
   return (
-    <div>
-      <Routes>
-        <Route path="/">
-          <Login />
-        </Route>
-      </Routes>
-    </div>
+    <Fragment>
+      <Routess />
+    </Fragment>
   );
 }
 

@@ -9,9 +9,7 @@ import Layout from "./layout/Layout";
 function App() {
   return (
     <Routes>
-      <Route path="/">
-        <Layout />
-      </Route>
+      <Route path="/" element= {<Layout />} />
     </Routes>
   );
 }
