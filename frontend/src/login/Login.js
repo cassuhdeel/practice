@@ -1,9 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../index.css"
 
 function Login() {
   return (
     <div>
-        <h4> Testing Login Page. You've successfully rendered me.</h4>
+      <div>
+        <form>
+          <div>
+            <label>Username</label>
+            <input type="text" id="username" />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" id="password" />
+          </div>
+          <Link to="/clicker">Log In</Link>
+        </form>
+      </div>
     </div>
   );
 }
