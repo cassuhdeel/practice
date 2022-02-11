@@ -1,5 +1,6 @@
 import { React, Fragment } from "react";
-import Routess from "./Routes";
+import { Route, Routes } from "react-router-dom";
+import Login from "../login/Login";
 
 /**
  * Defines the main layout of the application.
@@ -9,7 +10,9 @@ import Routess from "./Routes";
 function Layout() {
   return (
     <Fragment>
-      <Routess />
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
     </Fragment>
   );
 }
