@@ -7,13 +7,13 @@ function Login() {
     <div>
       <div>
         <form>
-          <div>
-            <label>Username</label>
-            <input type="text" id="username" />
+          <div class="form-group">
+            <label for='userName'>Username</label>
+            <input type="text" id="username" class="form-label" />
           </div>
-          <div>
-            <label>Password</label>
-            <input type="password" id="password" />
+          <div class="form-group"> 
+            <label for='password'>Password</label>
+            <input type="password" id="password" class="form-label"  />
           </div>
           <Link to="/clicker">Log In</Link>
         </form>
