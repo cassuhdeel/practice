@@ -1,5 +1,6 @@
 import { React, Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
+import Todo from "../todo/Todo";
 import Login from "../login/Login";
 import Clicker from "../clicker/Clicker";
 import Clicker2 from "../clicker/Clicker2";
@@ -14,6 +15,7 @@ function Layout() {
     <Fragment>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/todo" element={<Todo />} />
         <Route path="/clicker" element={<Clicker />} />
         <Route path="/clicker/clicker2" element={<Clicker2 />} />
       </Routes>
